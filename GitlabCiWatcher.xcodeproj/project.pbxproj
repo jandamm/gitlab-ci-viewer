@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */; };
+		FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */; };
+		FD14DF0F23789E9800F0BD2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0E23789E9800F0BD2B /* ContentView.swift */; };
+		FD14DF1123789E9900F0BD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1023789E9900F0BD2B /* Assets.xcassets */; };
+		FD14DF1423789E9900F0BD2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1323789E9900F0BD2B /* Preview Assets.xcassets */; };
+		FD14DF1723789E9900F0BD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */; };
+		FD14DF2223789E9900F0BD2B /* GitlabCiWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */; };
+		FD14DF2D23789E9900F0BD2B /* GitlabCiWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD14DF1E23789E9900F0BD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD14DEFF23789E9800F0BD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD14DF0623789E9800F0BD2B;
+			remoteInfo = GitlabCiWatcher;
+		};
+		FD14DF2923789E9900F0BD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD14DEFF23789E9800F0BD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD14DF0623789E9800F0BD2B;
+			remoteInfo = GitlabCiWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD14DF0723789E9800F0BD2B /* GitlabCiWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitlabCiWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD14DF0E23789E9800F0BD2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD14DF1023789E9900F0BD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD14DF1323789E9900F0BD2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD14DF1623789E9900F0BD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD14DF1823789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD14DF1D23789E9900F0BD2B /* GitlabCiWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitlabCiWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabCiWatcherTests.swift; sourceTree = "<group>"; };
+		FD14DF2323789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitlabCiWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabCiWatcherUITests.swift; sourceTree = "<group>"; };
+		FD14DF2E23789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD14DF0423789E9800F0BD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF1A23789E9900F0BD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF2523789E9900F0BD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD14DEFE23789E9800F0BD2B = {
+			isa = PBXGroup;
+			children = (
+				FD14DF0923789E9800F0BD2B /* GitlabCiWatcher */,
+				FD14DF2023789E9900F0BD2B /* GitlabCiWatcherTests */,
+				FD14DF2B23789E9900F0BD2B /* GitlabCiWatcherUITests */,
+				FD14DF0823789E9800F0BD2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD14DF0823789E9800F0BD2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD14DF0723789E9800F0BD2B /* GitlabCiWatcher.app */,
+				FD14DF1D23789E9900F0BD2B /* GitlabCiWatcherTests.xctest */,
+				FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD14DF0923789E9800F0BD2B /* GitlabCiWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */,
+				FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */,
+				FD14DF0E23789E9800F0BD2B /* ContentView.swift */,
+				FD14DF1023789E9900F0BD2B /* Assets.xcassets */,
+				FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */,
+				FD14DF1823789E9900F0BD2B /* Info.plist */,
+				FD14DF1223789E9900F0BD2B /* Preview Content */,
+			);
+			path = GitlabCiWatcher;
+			sourceTree = "<group>";
+		};
+		FD14DF1223789E9900F0BD2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD14DF1323789E9900F0BD2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD14DF2023789E9900F0BD2B /* GitlabCiWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */,
+				FD14DF2323789E9900F0BD2B /* Info.plist */,
+			);
+			path = GitlabCiWatcherTests;
+			sourceTree = "<group>";
+		};
+		FD14DF2B23789E9900F0BD2B /* GitlabCiWatcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */,
+				FD14DF2E23789E9900F0BD2B /* Info.plist */,
+			);
+			path = GitlabCiWatcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD14DF3123789E9900F0BD2B /* Build configuration list for PBXNativeTarget "GitlabCiWatcher" */;
+			buildPhases = (
+				FD14DF0323789E9800F0BD2B /* Sources */,
+				FD14DF0423789E9800F0BD2B /* Frameworks */,
+				FD14DF0523789E9800F0BD2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitlabCiWatcher;
+			productName = GitlabCiWatcher;
+			productReference = FD14DF0723789E9800F0BD2B /* GitlabCiWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD14DF1C23789E9900F0BD2B /* GitlabCiWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD14DF3423789E9900F0BD2B /* Build configuration list for PBXNativeTarget "GitlabCiWatcherTests" */;
+			buildPhases = (
+				FD14DF1923789E9900F0BD2B /* Sources */,
+				FD14DF1A23789E9900F0BD2B /* Frameworks */,
+				FD14DF1B23789E9900F0BD2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD14DF1F23789E9900F0BD2B /* PBXTargetDependency */,
+			);
+			name = GitlabCiWatcherTests;
+			productName = GitlabCiWatcherTests;
+			productReference = FD14DF1D23789E9900F0BD2B /* GitlabCiWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD14DF2723789E9900F0BD2B /* GitlabCiWatcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD14DF3723789E9900F0BD2B /* Build configuration list for PBXNativeTarget "GitlabCiWatcherUITests" */;
+			buildPhases = (
+				FD14DF2423789E9900F0BD2B /* Sources */,
+				FD14DF2523789E9900F0BD2B /* Frameworks */,
+				FD14DF2623789E9900F0BD2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD14DF2A23789E9900F0BD2B /* PBXTargetDependency */,
+			);
+			name = GitlabCiWatcherUITests;
+			productName = GitlabCiWatcherUITests;
+			productReference = FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD14DEFF23789E9800F0BD2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Jan Dammshäuser";
+				TargetAttributes = {
+					FD14DF0623789E9800F0BD2B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					FD14DF1C23789E9900F0BD2B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FD14DF0623789E9800F0BD2B;
+					};
+					FD14DF2723789E9900F0BD2B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FD14DF0623789E9800F0BD2B;
+					};
+				};
+			};
+			buildConfigurationList = FD14DF0223789E9800F0BD2B /* Build configuration list for PBXProject "GitlabCiWatcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD14DEFE23789E9800F0BD2B;
+			productRefGroup = FD14DF0823789E9800F0BD2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */,
+				FD14DF1C23789E9900F0BD2B /* GitlabCiWatcherTests */,
+				FD14DF2723789E9900F0BD2B /* GitlabCiWatcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD14DF0523789E9800F0BD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF1723789E9900F0BD2B /* LaunchScreen.storyboard in Resources */,
+				FD14DF1423789E9900F0BD2B /* Preview Assets.xcassets in Resources */,
+				FD14DF1123789E9900F0BD2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF1B23789E9900F0BD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF2623789E9900F0BD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD14DF0323789E9800F0BD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */,
+				FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */,
+				FD14DF0F23789E9800F0BD2B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF1923789E9900F0BD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF2223789E9900F0BD2B /* GitlabCiWatcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF2423789E9900F0BD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF2D23789E9900F0BD2B /* GitlabCiWatcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD14DF1F23789E9900F0BD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */;
+			targetProxy = FD14DF1E23789E9900F0BD2B /* PBXContainerItemProxy */;
+		};
+		FD14DF2A23789E9900F0BD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */;
+			targetProxy = FD14DF2923789E9900F0BD2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD14DF1623789E9900F0BD2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD14DF2F23789E9900F0BD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD14DF3023789E9900F0BD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD14DF3223789E9900F0BD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GitlabCiWatcher/Preview Content\"";
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GitlabCiWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.GitlabCiWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD14DF3323789E9900F0BD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GitlabCiWatcher/Preview Content\"";
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GitlabCiWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.GitlabCiWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD14DF3523789E9900F0BD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				INFOPLIST_FILE = GitlabCiWatcherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.GitlabCiWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitlabCiWatcher.app/GitlabCiWatcher";
+			};
+			name = Debug;
+		};
+		FD14DF3623789E9900F0BD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				INFOPLIST_FILE = GitlabCiWatcherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.GitlabCiWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitlabCiWatcher.app/GitlabCiWatcher";
+			};
+			name = Release;
+		};
+		FD14DF3823789E9900F0BD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				INFOPLIST_FILE = GitlabCiWatcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.GitlabCiWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GitlabCiWatcher;
+			};
+			name = Debug;
+		};
+		FD14DF3923789E9900F0BD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				INFOPLIST_FILE = GitlabCiWatcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.GitlabCiWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GitlabCiWatcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD14DF0223789E9800F0BD2B /* Build configuration list for PBXProject "GitlabCiWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14DF2F23789E9900F0BD2B /* Debug */,
+				FD14DF3023789E9900F0BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD14DF3123789E9900F0BD2B /* Build configuration list for PBXNativeTarget "GitlabCiWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14DF3223789E9900F0BD2B /* Debug */,
+				FD14DF3323789E9900F0BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD14DF3423789E9900F0BD2B /* Build configuration list for PBXNativeTarget "GitlabCiWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14DF3523789E9900F0BD2B /* Debug */,
+				FD14DF3623789E9900F0BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD14DF3723789E9900F0BD2B /* Build configuration list for PBXNativeTarget "GitlabCiWatcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14DF3823789E9900F0BD2B /* Debug */,
+				FD14DF3923789E9900F0BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD14DEFF23789E9800F0BD2B /* Project object */;
+}
