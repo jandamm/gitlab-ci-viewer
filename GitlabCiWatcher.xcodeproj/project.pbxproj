@@ -13,8 +13,13 @@
 		FD14DF1123789E9900F0BD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1023789E9900F0BD2B /* Assets.xcassets */; };
 		FD14DF1423789E9900F0BD2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1323789E9900F0BD2B /* Preview Assets.xcassets */; };
 		FD14DF1723789E9900F0BD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */; };
-		FD14DF2223789E9900F0BD2B /* GitlabCiWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */; };
-		FD14DF2D23789E9900F0BD2B /* GitlabCiWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */; };
+		FD14DF4A2378A03D00F0BD2B /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14DF412378A03D00F0BD2B /* Login.framework */; };
+		FD14DF512378A03D00F0BD2B /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF502378A03D00F0BD2B /* LoginTests.swift */; };
+		FD14DF532378A03D00F0BD2B /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = FD14DF432378A03D00F0BD2B /* Login.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD14DF562378A03D00F0BD2B /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14DF412378A03D00F0BD2B /* Login.framework */; };
+		FD14DF572378A03D00F0BD2B /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD14DF412378A03D00F0BD2B /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD14DF602378A0BC00F0BD2B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF5F2378A0BC00F0BD2B /* Login.swift */; };
+		FD14DF622378AF8C00F0BD2B /* NextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF612378AF8C00F0BD2B /* NextScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,42 @@
 			remoteGlobalIDString = FD14DF0623789E9800F0BD2B;
 			remoteInfo = GitlabCiWatcher;
 		};
+		FD14DF4B2378A03D00F0BD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD14DEFF23789E9800F0BD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD14DF402378A03D00F0BD2B;
+			remoteInfo = Login;
+		};
+		FD14DF4D2378A03D00F0BD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD14DEFF23789E9800F0BD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD14DF0623789E9800F0BD2B;
+			remoteInfo = GitlabCiWatcher;
+		};
+		FD14DF542378A03D00F0BD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD14DEFF23789E9800F0BD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD14DF402378A03D00F0BD2B;
+			remoteInfo = Login;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD14DF5B2378A03D00F0BD2B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD14DF572378A03D00F0BD2B /* Login.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD14DF0723789E9800F0BD2B /* GitlabCiWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitlabCiWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,11 +84,16 @@
 		FD14DF1623789E9900F0BD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD14DF1823789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD14DF1D23789E9900F0BD2B /* GitlabCiWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitlabCiWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabCiWatcherTests.swift; sourceTree = "<group>"; };
-		FD14DF2323789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitlabCiWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabCiWatcherUITests.swift; sourceTree = "<group>"; };
-		FD14DF2E23789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD14DF3A23789ED200F0BD2B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		FD14DF412378A03D00F0BD2B /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD14DF432378A03D00F0BD2B /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		FD14DF442378A03D00F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD14DF492378A03D00F0BD2B /* LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD14DF502378A03D00F0BD2B /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		FD14DF522378A03D00F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD14DF5F2378A0BC00F0BD2B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FD14DF612378AF8C00F0BD2B /* NextScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD14DF562378A03D00F0BD2B /* Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,15 +119,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD14DF3E2378A03D00F0BD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF462378A03D00F0BD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF4A2378A03D00F0BD2B /* Login.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FD14DEFE23789E9800F0BD2B = {
 			isa = PBXGroup;
 			children = (
-				FD14DF0923789E9800F0BD2B /* GitlabCiWatcher */,
-				FD14DF2023789E9900F0BD2B /* GitlabCiWatcherTests */,
-				FD14DF2B23789E9900F0BD2B /* GitlabCiWatcherUITests */,
+				FD14DF3A23789ED200F0BD2B /* Package.swift */,
+				FD14DF0923789E9800F0BD2B /* App */,
+				FD14DF422378A03D00F0BD2B /* Login */,
+				FD14DF4F2378A03D00F0BD2B /* LoginTests */,
 				FD14DF0823789E9800F0BD2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,11 +154,13 @@
 				FD14DF0723789E9800F0BD2B /* GitlabCiWatcher.app */,
 				FD14DF1D23789E9900F0BD2B /* GitlabCiWatcherTests.xctest */,
 				FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */,
+				FD14DF412378A03D00F0BD2B /* Login.framework */,
+				FD14DF492378A03D00F0BD2B /* LoginTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD14DF0923789E9800F0BD2B /* GitlabCiWatcher */ = {
+		FD14DF0923789E9800F0BD2B /* App */ = {
 			isa = PBXGroup;
 			children = (
 				FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */,
@@ -107,7 +171,7 @@
 				FD14DF1823789E9900F0BD2B /* Info.plist */,
 				FD14DF1223789E9900F0BD2B /* Preview Content */,
 			);
-			path = GitlabCiWatcher;
+			path = App;
 			sourceTree = "<group>";
 		};
 		FD14DF1223789E9900F0BD2B /* Preview Content */ = {
@@ -118,25 +182,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FD14DF2023789E9900F0BD2B /* GitlabCiWatcherTests */ = {
+		FD14DF422378A03D00F0BD2B /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */,
-				FD14DF2323789E9900F0BD2B /* Info.plist */,
+				FD14DF432378A03D00F0BD2B /* Login.h */,
+				FD14DF442378A03D00F0BD2B /* Info.plist */,
+				FD14DF5F2378A0BC00F0BD2B /* Login.swift */,
+				FD14DF612378AF8C00F0BD2B /* NextScreen.swift */,
 			);
-			path = GitlabCiWatcherTests;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		FD14DF2B23789E9900F0BD2B /* GitlabCiWatcherUITests */ = {
+		FD14DF4F2378A03D00F0BD2B /* LoginTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */,
-				FD14DF2E23789E9900F0BD2B /* Info.plist */,
+				FD14DF502378A03D00F0BD2B /* LoginTests.swift */,
+				FD14DF522378A03D00F0BD2B /* Info.plist */,
 			);
-			path = GitlabCiWatcherUITests;
+			path = LoginTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FD14DF3C2378A03D00F0BD2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF532378A03D00F0BD2B /* Login.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */ = {
@@ -146,10 +223,12 @@
 				FD14DF0323789E9800F0BD2B /* Sources */,
 				FD14DF0423789E9800F0BD2B /* Frameworks */,
 				FD14DF0523789E9800F0BD2B /* Resources */,
+				FD14DF5B2378A03D00F0BD2B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD14DF552378A03D00F0BD2B /* PBXTargetDependency */,
 			);
 			name = GitlabCiWatcher;
 			productName = GitlabCiWatcher;
@@ -192,6 +271,43 @@
 			productReference = FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FD14DF402378A03D00F0BD2B /* Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD14DF582378A03D00F0BD2B /* Build configuration list for PBXNativeTarget "Login" */;
+			buildPhases = (
+				FD14DF3C2378A03D00F0BD2B /* Headers */,
+				FD14DF3D2378A03D00F0BD2B /* Sources */,
+				FD14DF3E2378A03D00F0BD2B /* Frameworks */,
+				FD14DF3F2378A03D00F0BD2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Login;
+			productName = Login;
+			productReference = FD14DF412378A03D00F0BD2B /* Login.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD14DF482378A03D00F0BD2B /* LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD14DF5C2378A03D00F0BD2B /* Build configuration list for PBXNativeTarget "LoginTests" */;
+			buildPhases = (
+				FD14DF452378A03D00F0BD2B /* Sources */,
+				FD14DF462378A03D00F0BD2B /* Frameworks */,
+				FD14DF472378A03D00F0BD2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD14DF4C2378A03D00F0BD2B /* PBXTargetDependency */,
+				FD14DF4E2378A03D00F0BD2B /* PBXTargetDependency */,
+			);
+			name = LoginTests;
+			productName = LoginTests;
+			productReference = FD14DF492378A03D00F0BD2B /* LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +329,14 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = FD14DF0623789E9800F0BD2B;
 					};
+					FD14DF402378A03D00F0BD2B = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					FD14DF482378A03D00F0BD2B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FD14DF0623789E9800F0BD2B;
+					};
 				};
 			};
 			buildConfigurationList = FD14DF0223789E9800F0BD2B /* Build configuration list for PBXProject "GitlabCiWatcher" */;
@@ -231,6 +355,8 @@
 				FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */,
 				FD14DF1C23789E9900F0BD2B /* GitlabCiWatcherTests */,
 				FD14DF2723789E9900F0BD2B /* GitlabCiWatcherUITests */,
+				FD14DF402378A03D00F0BD2B /* Login */,
+				FD14DF482378A03D00F0BD2B /* LoginTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +386,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD14DF3F2378A03D00F0BD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF472378A03D00F0BD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,7 +417,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD14DF2223789E9900F0BD2B /* GitlabCiWatcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +424,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD14DF2D23789E9900F0BD2B /* GitlabCiWatcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF3D2378A03D00F0BD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF622378AF8C00F0BD2B /* NextScreen.swift in Sources */,
+				FD14DF602378A0BC00F0BD2B /* Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD14DF452378A03D00F0BD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14DF512378A03D00F0BD2B /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +456,21 @@
 			isa = PBXTargetDependency;
 			target = FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */;
 			targetProxy = FD14DF2923789E9900F0BD2B /* PBXContainerItemProxy */;
+		};
+		FD14DF4C2378A03D00F0BD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD14DF402378A03D00F0BD2B /* Login */;
+			targetProxy = FD14DF4B2378A03D00F0BD2B /* PBXContainerItemProxy */;
+		};
+		FD14DF4E2378A03D00F0BD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD14DF0623789E9800F0BD2B /* GitlabCiWatcher */;
+			targetProxy = FD14DF4D2378A03D00F0BD2B /* PBXContainerItemProxy */;
+		};
+		FD14DF552378A03D00F0BD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD14DF402378A03D00F0BD2B /* Login */;
+			targetProxy = FD14DF542378A03D00F0BD2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +603,7 @@
 		FD14DF3223789E9900F0BD2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GitlabCiWatcher/Preview Content\"";
@@ -453,6 +624,7 @@
 		FD14DF3323789E9900F0BD2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GitlabCiWatcher/Preview Content\"";
@@ -554,6 +726,103 @@
 			};
 			name = Release;
 		};
+		FD14DF592378A03D00F0BD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Login/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.Login;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD14DF5A2378A03D00F0BD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Login/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.Login;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD14DF5D2378A03D00F0BD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				INFOPLIST_FILE = LoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.LoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitlabCiWatcher.app/GitlabCiWatcher";
+			};
+			name = Debug;
+		};
+		FD14DF5E2378A03D00F0BD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N9Z26P656;
+				INFOPLIST_FILE = LoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.jandamm.LoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitlabCiWatcher.app/GitlabCiWatcher";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,6 +858,24 @@
 			buildConfigurations = (
 				FD14DF3823789E9900F0BD2B /* Debug */,
 				FD14DF3923789E9900F0BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD14DF582378A03D00F0BD2B /* Build configuration list for PBXNativeTarget "Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14DF592378A03D00F0BD2B /* Debug */,
+				FD14DF5A2378A03D00F0BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD14DF5C2378A03D00F0BD2B /* Build configuration list for PBXNativeTarget "LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14DF5D2378A03D00F0BD2B /* Debug */,
+				FD14DF5E2378A03D00F0BD2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,15 +1,15 @@
 //
-//  GitlabCiWatcherTests.swift
-//  GitlabCiWatcherTests
+//  LoginTests.swift
+//  LoginTests
 //
 //  Created by Jan Dammshäuser on 10.11.19.
 //  Copyright © 2019 Jan Dammshäuser. All rights reserved.
 //
 
 import XCTest
-@testable import GitlabCiWatcher
+@testable import Login
 
-class GitlabCiWatcherTests: XCTestCase {
+class LoginTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
