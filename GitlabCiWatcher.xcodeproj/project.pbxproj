@@ -15,6 +15,7 @@
 		FD14DF1723789E9900F0BD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */; };
 		FD14DF2223789E9900F0BD2B /* GitlabCiWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */; };
 		FD14DF2D23789E9900F0BD2B /* GitlabCiWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */; };
+		FD8F93A92396F9990048AB52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F93A82396F9990048AB52 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitlabCiWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabCiWatcherUITests.swift; sourceTree = "<group>"; };
 		FD14DF2E23789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8F93A82396F9990048AB52 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */,
 				FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */,
 				FD14DF0E23789E9800F0BD2B /* ContentView.swift */,
+				FD8F93A82396F9990048AB52 /* LoginView.swift */,
 				FD14DF1023789E9900F0BD2B /* Assets.xcassets */,
 				FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */,
 				FD14DF1823789E9900F0BD2B /* Info.plist */,
@@ -269,6 +272,7 @@
 			files = (
 				FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */,
 				FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */,
+				FD8F93A92396F9990048AB52 /* LoginView.swift in Sources */,
 				FD14DF0F23789E9800F0BD2B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
