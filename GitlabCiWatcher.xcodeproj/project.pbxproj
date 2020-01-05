@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BED136C99EA475DDA8B32A7B /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED130AB7A813F6EE8C9A53A /* Pipeline.swift */; };
+		BED137D19BDA107F72BECF50 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13A7DE46E1D7DCB21DD88 /* Job.swift */; };
+		BED13FFFE08CF84ACBAE93D0 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13A99623A909186CED6A7 /* Project.swift */; };
 		FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */; };
 		FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */; };
 		FD14DF0F23789E9800F0BD2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0E23789E9800F0BD2B /* ContentView.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BED130AB7A813F6EE8C9A53A /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		BED13A7DE46E1D7DCB21DD88 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		BED13A99623A909186CED6A7 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		FD14DF0723789E9800F0BD2B /* GitlabCiWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitlabCiWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BED13348C6458ED800D98557 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BED13A99623A909186CED6A7 /* Project.swift */,
+				BED130AB7A813F6EE8C9A53A /* Pipeline.swift */,
+				BED13A7DE46E1D7DCB21DD88 /* Job.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FD14DEFE23789E9800F0BD2B = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,7 @@
 				FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */,
 				FD14DF1823789E9900F0BD2B /* Info.plist */,
 				FD14DF1223789E9900F0BD2B /* Preview Content */,
+				BED13348C6458ED800D98557 /* Model */,
 			);
 			path = GitlabCiWatcher;
 			sourceTree = "<group>";
@@ -274,6 +291,9 @@
 				FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */,
 				FD8F93A92396F9990048AB52 /* LoginView.swift in Sources */,
 				FD14DF0F23789E9800F0BD2B /* ContentView.swift in Sources */,
+				BED13FFFE08CF84ACBAE93D0 /* Project.swift in Sources */,
+				BED136C99EA475DDA8B32A7B /* Pipeline.swift in Sources */,
+				BED137D19BDA107F72BECF50 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
