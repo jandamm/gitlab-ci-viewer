@@ -4,7 +4,6 @@
 //
 
 import Foundation
-import Tagged
 
 struct Job {
 	let id: Tagged<Job, Int>
