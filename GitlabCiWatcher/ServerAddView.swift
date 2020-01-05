@@ -11,6 +11,8 @@ import SwiftUI
 struct ServerAddView: View {
 	@Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
 
+	@ObservedObject var model: ModelProvider
+
 	@State private var server: Partial<Server> = .init()
 
 	var body: some View {
@@ -36,7 +38,7 @@ struct ServerAddView: View {
 	private func addNewServer() {
 		switch server.validated() {
 		case let .valid(server):
-			print(server)
+			model.addServer(server)
 
 			presentationMode.wrappedValue.dismiss()
 
@@ -74,6 +76,7 @@ struct RelativeImage: View {
 
 struct ServerAddView_Previews: PreviewProvider {
 	static var previews: some View {
-		ServerAddView()
+		Current = .mock
+		return ServerAddView(model: ModelProvider())
 	}
 }

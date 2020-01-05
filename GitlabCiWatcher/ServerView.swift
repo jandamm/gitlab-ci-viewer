@@ -7,16 +7,17 @@
 //
 
 import SwiftUI
+import Combine
 
 typealias ProjectListView = Text
 
 struct ServerView: View {
-	@State var servers: [Server]
+	@ObservedObject var model: ModelProvider
 	@State var showAddServerView: Bool = false
 
 	var body: some View {
 		NavigationView {
-			List(servers) { server in
+			List(model.servers) { server in
 				NavigationLink(destination: ProjectListView(server.name)) {
 					VStack(alignment: .leading) {
 						Text(server.name)
@@ -29,13 +30,14 @@ struct ServerView: View {
 			}
 			  .navigationBarTitle(Text("Servers"))
 			  .navigationBarItems(trailing: Button(action: { self.showAddServerView = true }, label: { Text("Add") }))
-			  .sheet(isPresented: $showAddServerView, onDismiss: { self.showAddServerView = false}, content: { ServerAddView() })
+			  .sheet(isPresented: $showAddServerView, onDismiss: { self.showAddServerView = false}, content: { ServerAddView(model: self.model) })
 		}
 	}
 }
 
 struct ServerView_Previews: PreviewProvider {
 	static var previews: some View {
-		ServerView(servers: Server.mock)
+		Current = .mock
+		return ServerView(model: ModelProvider())
 	}
 }

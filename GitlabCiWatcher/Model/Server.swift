@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct Server: Identifiable {
+struct Server: Identifiable, Codable {
 	var id: URL { url }
 
 	let name: String
