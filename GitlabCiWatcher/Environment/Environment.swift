@@ -13,6 +13,7 @@ struct Env {
 	var getServers: () -> [Server] = { (try? UserDefaults.standard.get([Server].self, forKey: serverKey)) ?? [] }
 	var saveServers: ([Server]) -> Void = { try? UserDefaults.standard.set($0, forKey: serverKey) }
 
+	// TODO: cache projects?
 	var getProjects: (Server) -> AnyPublisher<[Project], URLError> = Requests.projects(on:)
 }
 

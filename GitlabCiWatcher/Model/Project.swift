@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct Project: Decodable {
+struct Project: Decodable, Identifiable {
 	let id: Tagged<Project, Int>
 	let name: String
 }

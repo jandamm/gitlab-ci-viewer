@@ -6,6 +6,17 @@
 import Foundation
 import Combine
 
+extension URLComponents {
+	mutating func appendQueryItem(_ item: URLQueryItem) {
+		if queryItems == nil { queryItems = [] }
+		queryItems?.append(item)
+	}
+
+	init?(url: URL) {
+		self.init(url: url, resolvingAgainstBaseURL: false)
+	}
+}
+
 private let decoder = JSONDecoder()
 private let encoder = JSONEncoder()
 
@@ -14,18 +25,28 @@ private enum Path {
 
 	fileprivate func url(for server: Server) -> URL {
 		let url = server.url.appendingPathComponent("api/v4")
+		var components: URLComponents?
 		switch self {
 		case .projects:
-			return url.appendingPathComponent("users/\(server.username)/projects?archived=false")
+			components = URLComponents(
+				url: url.appendingPathComponent("users/\(server.username)/projects")
+			)
+			components?.appendQueryItem(.init(name: "archived", value: "false"))
 		}
+
+		components?.appendQueryItem(.init(name: "access_token", value: server.accessToken))
+
+		guard let output = components?.url else { fatalError() }
+
+		return output
 	}
 }
 
 enum Requests {
 	private static func request(server: Server, path: Path) -> URLSession.DataTaskPublisher {
-		var request = URLRequest(url: path.url(for: server))
-		request.addValue("Bearer \(server.accessToken))", forHTTPHeaderField: "Authorization")
-		return URLSession.shared.dataTaskPublisher(for: request)
+		URLSession.shared.dataTaskPublisher(
+			for: URLRequest(url: path.url(for: server))
+		)
 	}
 
 	static func projects(on server: Server) -> AnyPublisher<[Project], URLError> {

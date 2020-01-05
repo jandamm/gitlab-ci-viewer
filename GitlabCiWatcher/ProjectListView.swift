@@ -5,10 +5,20 @@
 
 import SwiftUI
 
+typealias PipelineListView = Text
+
 struct ProjectListView: View {
-	var model: ProjectListModel
+	@ObservedObject var model: ProjectListModel
+
 	var body: some View {
-		Text(model.server.name)
+		List(model.projects) { project in
+			NavigationLink(destination: PipelineListView("\(project.id.rawValue)")) {
+				Text(project.name)
+					.bold()
+			}
+		}
+			.onAppear(perform: model.load)
+			.navigationBarTitle(Text(model.server.name))
 	}
 }
 
