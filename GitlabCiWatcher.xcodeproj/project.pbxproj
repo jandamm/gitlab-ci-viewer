@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BED130FB809A7D93938D2615 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1315CAAA3B80BF82D7D02 /* ProjectListView.swift */; };
 		BED1311A74D825553839DC59 /* Validated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED137C1A39C53EC36B3D0A9 /* Validated.swift */; };
 		BED132B685151647EF1F5CDD /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED131F9BB98AE85A95C07B2 /* Server.swift */; };
 		BED1352B799F4E8713A3036C /* ServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13B1E4DA9355AF470ED91 /* ServerView.swift */; };
@@ -16,6 +17,8 @@
 		BED13783F7419DB4EF3D9A67 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED136BC81A6DC9681045E43 /* UserDefaults+Extension.swift */; };
 		BED137D19BDA107F72BECF50 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13A7DE46E1D7DCB21DD88 /* Job.swift */; };
 		BED13809D80425035278B376 /* ServerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13D9547131CABA1DF527F /* ServerListModel.swift */; };
+		BED13813F9BBD28031CA221E /* ProjectListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED133A45FF2198B1F86CE21 /* ProjectListModel.swift */; };
+		BED138AEDDED486D81FF6D44 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13ABA01ADCB7E1B70CDBA /* Requests.swift */; };
 		BED13EFFC6E8C2CCD9B94BE6 /* Partial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1342B736661E8BF364F7E /* Partial.swift */; };
 		BED13FFFE08CF84ACBAE93D0 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13A99623A909186CED6A7 /* Project.swift */; };
 		FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */; };
@@ -48,12 +51,15 @@
 /* Begin PBXFileReference section */
 		BED1301A6B07E0A72AB14313 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		BED130AB7A813F6EE8C9A53A /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		BED1315CAAA3B80BF82D7D02 /* ProjectListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		BED131F9BB98AE85A95C07B2 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		BED133A45FF2198B1F86CE21 /* ProjectListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListModel.swift; sourceTree = "<group>"; };
 		BED1342B736661E8BF364F7E /* Partial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partial.swift; sourceTree = "<group>"; };
 		BED136BC81A6DC9681045E43 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		BED137C1A39C53EC36B3D0A9 /* Validated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validated.swift; sourceTree = "<group>"; };
 		BED13A7DE46E1D7DCB21DD88 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		BED13A99623A909186CED6A7 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		BED13ABA01ADCB7E1B70CDBA /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		BED13B1E4DA9355AF470ED91 /* ServerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerView.swift; sourceTree = "<group>"; };
 		BED13D9547131CABA1DF527F /* ServerListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerListModel.swift; sourceTree = "<group>"; };
 		BED13E0C0C01C3ACEB35025A /* Tagged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 				BED13A7DE46E1D7DCB21DD88 /* Job.swift */,
 				BED131F9BB98AE85A95C07B2 /* Server.swift */,
 				BED13D9547131CABA1DF527F /* ServerListModel.swift */,
+				BED133A45FF2198B1F86CE21 /* ProjectListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				BED1301A6B07E0A72AB14313 /* Environment.swift */,
+				BED13ABA01ADCB7E1B70CDBA /* Requests.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				BED139A2D12E78281DC4F0EF /* Helper */,
 				BED13B1E4DA9355AF470ED91 /* ServerView.swift */,
 				BED139DF1DA5323DE2CDA435 /* Environment */,
+				BED1315CAAA3B80BF82D7D02 /* ProjectListView.swift */,
 			);
 			path = GitlabCiWatcher;
 			sourceTree = "<group>";
@@ -338,6 +347,9 @@
 				BED13677EA161F34DDD83D18 /* Environment.swift in Sources */,
 				BED13809D80425035278B376 /* ServerListModel.swift in Sources */,
 				BED13783F7419DB4EF3D9A67 /* UserDefaults+Extension.swift in Sources */,
+				BED130FB809A7D93938D2615 /* ProjectListView.swift in Sources */,
+				BED13813F9BBD28031CA221E /* ProjectListModel.swift in Sources */,
+				BED138AEDDED486D81FF6D44 /* Requests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

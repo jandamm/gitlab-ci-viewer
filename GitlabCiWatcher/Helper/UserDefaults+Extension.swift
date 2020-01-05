@@ -10,7 +10,7 @@ private let encoder = JSONEncoder()
 
 extension UserDefaults {
 	func set<V: Codable>(_ value: V, forKey key: String) throws {
-		self.set(try encoder.encode(value), forKey: key)
+		try self.set(try encoder.encode(value), forKey: key)
 	}
 
 	func get<V: Codable>(_ type: V.Type, forKey key: String) throws -> V? {

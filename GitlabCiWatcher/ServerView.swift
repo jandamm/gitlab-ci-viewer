@@ -9,8 +9,6 @@
 import SwiftUI
 import Combine
 
-typealias ProjectListView = Text
-
 struct ServerView: View {
 	@ObservedObject var model: ServerListModel
 	@State var showAddServerView: Bool = false
@@ -18,7 +16,7 @@ struct ServerView: View {
 	var body: some View {
 		NavigationView {
 			List(model.servers) { server in
-				NavigationLink(destination: ProjectListView(server.name)) {
+				NavigationLink(destination: ProjectListView(model: .init(server: server))) {
 					VStack(alignment: .leading) {
 						Text(server.name)
 						  .bold()

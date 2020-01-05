@@ -57,8 +57,10 @@ extension Partial where Value == Server {
 	}
 }
 extension Server {
-	static let mock = [
+	static let mock = Server(name: "Gitlab", url: URL(string: "https://gitlab.com")!, username: "jandamm", accessToken: "brst")
+
+	static let mocks = [
+		mock,
 		Server(name: "Seven Principles", url: URL(string: "https://gitlab.7p-group.com")!, username: "jandamm", accessToken: "arst"),
-		Server(name: "Gitlab", url: URL(string: "https://gitlab.com")!, username: "jandamm", accessToken: "brst")
 	]
 }

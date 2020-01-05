@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Combine
 
 var Current: Env = Env()
 
@@ -11,6 +12,8 @@ private let serverKey = "udServer"
 struct Env {
 	var getServers: () -> [Server] = { (try? UserDefaults.standard.get([Server].self, forKey: serverKey)) ?? [] }
 	var saveServers: ([Server]) -> Void = { try? UserDefaults.standard.set($0, forKey: serverKey) }
+
+	var getProjects: (Server) -> AnyPublisher<[Project], URLError> = Requests.projects(on:)
 }
 
 extension Env {
@@ -25,7 +28,7 @@ extension Env {
 
 extension Env {
 	static let mock: Env = .init(
-		getServers: { Server.mock },
+		getServers: { Server.mocks },
 		saveServers: { _ in }
 	)
 }
