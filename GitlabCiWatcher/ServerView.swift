@@ -12,7 +12,7 @@ import Combine
 typealias ProjectListView = Text
 
 struct ServerView: View {
-	@ObservedObject var model: ModelProvider
+	@ObservedObject var model: ServerListModel
 	@State var showAddServerView: Bool = false
 
 	var body: some View {
@@ -38,6 +38,6 @@ struct ServerView: View {
 struct ServerView_Previews: PreviewProvider {
 	static var previews: some View {
 		Current = .mock
-		return ServerView(model: ModelProvider())
+		return ServerView(model: ServerListModel())
 	}
 }

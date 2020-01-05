@@ -6,7 +6,7 @@
 import Foundation
 
 // Not sure what pattern I'll use.
-class ModelProvider: ObservableObject {
+class ServerListModel: ObservableObject {
 	@Published private(set) var servers: [Server] = Current.getServers()
 
 	func addServer(_ server: Server) {
