@@ -11,7 +11,7 @@ import SwiftUI
 struct LoginView: View {
 	@State var url: String = ""
 	@State var username: String = ""
-	@State var password: String = ""
+	@State var accessToken: String = ""
     var body: some View {
 
 				VStack {
@@ -21,7 +21,7 @@ struct LoginView: View {
 					TextField("Gitlab URL", text: self.$url)
 						.padding(.top)
 					TextField("Username", text: self.$username)
-					SecureField("Password", text: self.$password)
+					SecureField("Access Token", text: self.$accessToken)
 						.padding(.bottom)
 					Button(action: { print("tapped" as Any) }) {
 						Text("Enter")
