@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BED1311A74D825553839DC59 /* Validated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED137C1A39C53EC36B3D0A9 /* Validated.swift */; };
+		BED132B685151647EF1F5CDD /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED131F9BB98AE85A95C07B2 /* Server.swift */; };
 		BED1352B799F4E8713A3036C /* ServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13B1E4DA9355AF470ED91 /* ServerView.swift */; };
 		BED1353DBB3046DFDCA5FFBE /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13E0C0C01C3ACEB35025A /* Tagged.swift */; };
 		BED136C99EA475DDA8B32A7B /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED130AB7A813F6EE8C9A53A /* Pipeline.swift */; };
 		BED137D19BDA107F72BECF50 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13A7DE46E1D7DCB21DD88 /* Job.swift */; };
+		BED13EFFC6E8C2CCD9B94BE6 /* Partial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1342B736661E8BF364F7E /* Partial.swift */; };
 		BED13FFFE08CF84ACBAE93D0 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED13A99623A909186CED6A7 /* Project.swift */; };
 		FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */; };
 		FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */; };
@@ -19,7 +22,7 @@
 		FD14DF1723789E9900F0BD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */; };
 		FD14DF2223789E9900F0BD2B /* GitlabCiWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2123789E9900F0BD2B /* GitlabCiWatcherTests.swift */; };
 		FD14DF2D23789E9900F0BD2B /* GitlabCiWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */; };
-		FD8F93A92396F9990048AB52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F93A82396F9990048AB52 /* LoginView.swift */; };
+		FD8F93A92396F9990048AB52 /* ServerAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F93A82396F9990048AB52 /* ServerAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		BED130AB7A813F6EE8C9A53A /* Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		BED131F9BB98AE85A95C07B2 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		BED1342B736661E8BF364F7E /* Partial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partial.swift; sourceTree = "<group>"; };
+		BED137C1A39C53EC36B3D0A9 /* Validated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validated.swift; sourceTree = "<group>"; };
 		BED13A7DE46E1D7DCB21DD88 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		BED13A99623A909186CED6A7 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		BED13B1E4DA9355AF470ED91 /* ServerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerView.swift; sourceTree = "<group>"; };
@@ -58,7 +64,7 @@
 		FD14DF2823789E9900F0BD2B /* GitlabCiWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitlabCiWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD14DF2C23789E9900F0BD2B /* GitlabCiWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabCiWatcherUITests.swift; sourceTree = "<group>"; };
 		FD14DF2E23789E9900F0BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD8F93A82396F9990048AB52 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FD8F93A82396F9990048AB52 /* ServerAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				BED13A99623A909186CED6A7 /* Project.swift */,
 				BED130AB7A813F6EE8C9A53A /* Pipeline.swift */,
 				BED13A7DE46E1D7DCB21DD88 /* Job.swift */,
+				BED131F9BB98AE85A95C07B2 /* Server.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				BED13E0C0C01C3ACEB35025A /* Tagged.swift */,
+				BED1342B736661E8BF364F7E /* Partial.swift */,
+				BED137C1A39C53EC36B3D0A9 /* Validated.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -129,7 +138,7 @@
 			children = (
 				FD14DF0A23789E9800F0BD2B /* AppDelegate.swift */,
 				FD14DF0C23789E9800F0BD2B /* SceneDelegate.swift */,
-				FD8F93A82396F9990048AB52 /* LoginView.swift */,
+				FD8F93A82396F9990048AB52 /* ServerAddView.swift */,
 				FD14DF1023789E9900F0BD2B /* Assets.xcassets */,
 				FD14DF1523789E9900F0BD2B /* LaunchScreen.storyboard */,
 				FD14DF1823789E9900F0BD2B /* Info.plist */,
@@ -300,12 +309,15 @@
 			files = (
 				FD14DF0B23789E9800F0BD2B /* AppDelegate.swift in Sources */,
 				FD14DF0D23789E9800F0BD2B /* SceneDelegate.swift in Sources */,
-				FD8F93A92396F9990048AB52 /* LoginView.swift in Sources */,
+				FD8F93A92396F9990048AB52 /* ServerAddView.swift in Sources */,
 				BED13FFFE08CF84ACBAE93D0 /* Project.swift in Sources */,
 				BED136C99EA475DDA8B32A7B /* Pipeline.swift in Sources */,
 				BED137D19BDA107F72BECF50 /* Job.swift in Sources */,
 				BED1353DBB3046DFDCA5FFBE /* Tagged.swift in Sources */,
 				BED1352B799F4E8713A3036C /* ServerView.swift in Sources */,
+				BED13EFFC6E8C2CCD9B94BE6 /* Partial.swift in Sources */,
+				BED132B685151647EF1F5CDD /* Server.swift in Sources */,
+				BED1311A74D825553839DC59 /* Validated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
