@@ -14,7 +14,9 @@ struct Env {
 	var saveServers: ([Server]) -> Void = { try? UserDefaults.standard.set($0, forKey: serverKey) }
 
 	// TODO: cache projects?
-	var getProjects: (Server) -> AnyPublisher<[Project], URLError> = Requests.projects(on:)
+	var getProjects: (Server) -> AnyPublisher<[Project], URLError> = Requests.projects(server:)
+	var getPipelines: (Server, Project) -> AnyPublisher<[Pipeline], URLError> = Requests.pipelines(server:project:)
+	var getJobs: (Server, Project, Pipeline) -> AnyPublisher<[Job], URLError> = Requests.jobs(server:project:pipeline:)
 }
 
 extension Env {

@@ -5,8 +5,10 @@
 
 import Foundation
 
-struct Pipeline {
-	let id: Tagged<Pipeline, Int>
+struct Pipeline: Identifiable, Decodable {
+	typealias Id = Tagged<Pipeline, Int>
+	let id: Id
 	let ref: String
+	let createdAt: Date
 	let status: Job.Status
 }

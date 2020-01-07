@@ -6,6 +6,7 @@
 import Foundation
 
 struct Project: Decodable, Identifiable {
-	let id: Tagged<Project, Int>
+	typealias Id = Tagged<Project, Int>
+	let id: Id
 	let name: String
 }

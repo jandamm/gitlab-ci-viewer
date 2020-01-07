@@ -5,13 +5,14 @@
 
 import Foundation
 
-struct Job {
-	let id: Tagged<Job, Int>
+struct Job: Decodable {
+	typealias Id = Tagged<Job, Int>
+	let id: Id
 	let name: String
 	let status: Status
 	let stage: String
 
-	enum Status: String {
+	enum Status: String, Decodable {
 		// https://docs.gitlab.com/ee/api/pipelines.html
 		case running, pending, success, failed, canceled, skipped
 	}
