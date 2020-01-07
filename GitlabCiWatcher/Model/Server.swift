@@ -61,6 +61,6 @@ extension Server {
 
 	static let mocks = [
 		mock,
-		Server(name: "Seven Principles", url: URL(string: "https://gitlab.7p-group.com")!, username: "jandamm", accessToken: "arst"),
+		Server(name: "Seven Principles", url: URL(string: "https://gitlab.7p-group.com")!, username: "jan.dammshaeuser", accessToken: "arst"),
 	]
 }

@@ -28,18 +28,25 @@ private let decoder: JSONDecoder = {
 
 private enum Path {
 	case projects
+	case userProjects
 	case pipelines(Project)
 	case jobs(Project, Pipeline)
 
+	private static let archived = URLQueryItem(name: "archived", value: "false")
 	fileprivate func url(for server: Server) -> URL {
 		let url = server.url.appendingPathComponent("api/v4")
 		var components: URLComponents?
 		switch self {
 		case .projects:
 			components = URLComponents(
+				url: url.appendingPathComponent("projects")
+			)
+			components?.appendQueryItem(Path.archived)
+		case .userProjects:
+			components = URLComponents(
 				url: url.appendingPathComponent("users/\(server.username)/projects")
 			)
-			components?.appendQueryItem(.init(name: "archived", value: "false"))
+			components?.appendQueryItem(Path.archived)
 		case let .pipelines(project):
 			components = URLComponents(
 				url: url.appendingPathComponent("projects/\(project.id.rawValue)/pipelines")
@@ -67,10 +74,16 @@ enum Requests {
 	}
 
 	static func projects(server: Server) -> AnyPublisher<[Project], URLError> {
-		request(server: server, path: .projects)
-			.compactMap { data, response in
-				try? decoder.decode([Project].self, from: data)
-			}
+		let decode: (Data, URLResponse) -> [Project]? = { data, response in
+			try? decoder.decode([Project].self, from: data)
+		}
+		let userProjects = request(server: server, path: .userProjects)
+			.compactMap(decode)
+		let projects = request(server: server, path: .projects)
+			.compactMap(decode)
+
+		return	projects.combineLatest(userProjects)
+			.map(+)
 			.eraseToAnyPublisher()
 	}
 
