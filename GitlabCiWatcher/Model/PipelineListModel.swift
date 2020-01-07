@@ -8,10 +8,11 @@ import Combine
 
 class PipelineListModel: ObservableObject {
 	@Published private(set) var pipelines: [Pipeline] = []
-	@Published private(set) var jobs: [Pipeline.Id: Job] = [:]
+	@Published private(set) var jobs: [Pipeline.Id: [Job]] = [:]
 	let server: Server
 	let project: Project
-	private var observer: AnyCancellable?
+	private var pipelineObserver: AnyCancellable?
+	private var jobObservers: Set<AnyCancellable> = []
 
 	init(server: Server, project: Project) {
 		self.server = server
@@ -19,18 +20,19 @@ class PipelineListModel: ObservableObject {
 	}
 
 	deinit {
-		observer?.cancel()
+		pipelineObserver?.cancel()
+		jobObservers.forEach { $0.cancel() }
 	}
 
 	func load() {
-		guard observer == nil else { return }
+		guard pipelineObserver == nil else { return }
 
-		observer = Current.getPipelines(server, project)
+		pipelineObserver = Current.getPipelines(server, project)
 			.sink(
 				receiveCompletion: { [weak self] c in
 					switch c {
 					case .finished:
-						self?.observer = nil
+						self?.pipelineObserver = nil
 					case let .failure(error):
 						print(error)  // ignore errors for now
 					}
@@ -38,8 +40,25 @@ class PipelineListModel: ObservableObject {
 				receiveValue: { [weak self] value in
 					DispatchQueue.main.async {
 						self?.pipelines = value
+						self?.loadJobs(for: value)
 					}
 				}
 			)
+	}
+
+	private func loadJobs(for pipelines: [Pipeline]) {
+		pipelines.forEach { pipeline in
+			jobObservers.insert(
+				Current.getJobs(server, project, pipeline)
+				.sink(
+					receiveCompletion: { _ in  }, // ignore errors for now
+					receiveValue: { [weak self] value in
+						DispatchQueue.main.async {
+							self?.jobs[pipeline.id] = value
+						}
+					}
+				)
+			)
+		}
 	}
 }

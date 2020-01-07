@@ -19,10 +19,14 @@ struct PipelineListView: View {
 
 	var body: some View {
 		List(model.pipelines) { pipeline in
-			VStack {
-				Text(dateFormatter.string(from: pipeline.createdAt))
-				Text(pipeline.ref)
-					.bold()
+			HStack{
+				VStack(alignment: .leading) {
+					Text(dateFormatter.string(from: pipeline.createdAt))
+					Text("Ref: \(pipeline.ref)")
+						.bold()
+				}
+				Spacer()
+				JobsView(model: self.model, pipeline: pipeline.id)
 			}
 		}
 			.onAppear(perform: model.load)
